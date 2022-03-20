@@ -1,3 +1,5 @@
+package vsredkin.http;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

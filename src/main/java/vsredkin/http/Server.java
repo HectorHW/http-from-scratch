@@ -1,3 +1,5 @@
+package vsredkin.http;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -9,7 +11,7 @@ import java.util.List;
 
 public class Server {
     public static void main(String[] args) throws IOException, RequestReadingException {
-        ServerSocket socket = new ServerSocket(8080);
+        ServerSocket socket = new ServerSocket(80);
 
 
 

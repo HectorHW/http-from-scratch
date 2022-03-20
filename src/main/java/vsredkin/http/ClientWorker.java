@@ -1,3 +1,4 @@
+package vsredkin.http;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -36,6 +37,8 @@ public class ClientWorker implements Runnable{
                 this.expectsRequests = false;
                 try {
                     HTTPRequest r = HTTPRequest.readFromStream(input);
+
+                    System.out.println(r.getMethod() + " " + r.getPath() + " " + r.getProto());
 
                     this.expectsRequests = r.getHeaders().getOrDefault("Connection", "close").equals("keep-alive");
 
